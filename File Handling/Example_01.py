@@ -15,3 +15,14 @@ file.write("It is Example_01.text file")
 print("Data written to the file succesfully")
 file.close()
 
+# Open a file in write mode
+file = open("Example_01.txt", 'r')
+data= file.read()
+print(data)
+
+file = open("Example_01.txt",'w')
+list=["Ayan","Belal","Ehsan","Shazeb"]
+file.writelines(list)
+print("List of line written to the file succesfully")
+file.close()
+
